@@ -1,0 +1,560 @@
+{
+  "dailyPlans": {
+    "monday": ["general_arts_1_english"],
+    "tuesday": ["general_arts_1_english"],
+    "wednesday": ["general_arts_1_english"],
+    "thursday": ["general_arts_1_english"],
+    "friday": ["general_arts_1_english"],
+    "saturday": ["general_arts_1_english"],
+    "sunday": ["general_arts_1_english"]
+  },
+  "programs": {
+    "general_arts": {
+      "name": "General Arts",
+      "icon": "🎭",
+      "levels": {
+        "1": {
+          "subjects": {
+            "english": {
+              "name": "English Language",
+              "icon": "📝",
+              "topics": [
+                "Parts of Speech",
+                "Tenses",
+                "Sentence Structure",
+                "Comprehension"
+              ],
+              "questions": [
+                {
+                  "id": "en1_1",
+                  "type": "mcq",
+                  "question": "Which of the following is a noun?",
+                  "options": ["Run", "Beautiful", "Book", "Quickly"],
+                  "correct": 2,
+                  "explanation": "Book is a noun - a person, place, or thing.",
+                  "topic": "Parts of Speech",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "en1_2",
+                  "type": "mcq",
+                  "question": "Choose the correct sentence:",
+                  "options": ["She go to school yesterday", "She went to school yesterday", "She going to school yesterday", "She gone to school yesterday"],
+                  "correct": 1,
+                  "explanation": "She went to school yesterday - past tense.",
+                  "topic": "Tenses",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "en1_3",
+                  "type": "mcq",
+                  "question": "What type of sentence is: 'Close the door!'",
+                  "options": ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
+                  "correct": 2,
+                  "explanation": "Imperative sentences give commands or requests.",
+                  "topic": "Sentence Structure",
+                  "difficulty": "medium"
+                },
+                {
+                  "id": "en1_4",
+                  "type": "short",
+                  "question": "Write the past tense of 'go'",
+                  "answer": "went",
+                  "topic": "Tenses",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "en1_5",
+                  "type": "mcq",
+                  "question": "Which word is a synonym of 'happy'?",
+                  "options": ["Sad", "Joyful", "Angry", "Tired"],
+                  "correct": 1,
+                  "explanation": "Joyful means feeling or expressing great happiness.",
+                  "topic": "Vocabulary",
+                  "difficulty": "easy"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Introduction to English Grammar",
+                  "content": "English grammar is the set of rules that govern how words are combined to form sentences. The basic components include nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions, and interjections.",
+                  "topic": "Parts of Speech",
+                  "timeAllocation": 5
+                },
+                {
+                  "title": "Understanding Tenses",
+                  "content": "Tenses show when an action takes place. The three main tenses are past, present, and future. Each has simple, continuous, perfect, and perfect continuous forms.",
+                  "topic": "Tenses",
+                  "timeAllocation": 7
+                }
+              ]
+            },
+            "social_studies": {
+              "name": "Social Studies",
+              "icon": "🌍",
+              "topics": [
+                "Our Physical Environment",
+                "Our Social Environment",
+                "Our Economic Environment"
+              ],
+              "questions": [
+                {
+                  "id": "ss1_1",
+                  "type": "mcq",
+                  "question": "What is the capital of Ghana?",
+                  "options": ["Accra", "Kumasi", "Takoradi", "Cape Coast"],
+                  "correct": 0,
+                  "explanation": "Accra is the capital city of Ghana.",
+                  "topic": "Our Physical Environment",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "ss1_2",
+                  "type": "mcq",
+                  "question": "Who was Ghana's first President?",
+                  "options": ["Kwame Nkrumah", "John Dramani Mahama", "John Atta Mills", "Nkrumah"],
+                  "correct": 0,
+                  "explanation": "Kwame Nkrumah was Ghana's first President.",
+                  "topic": "Our Social Environment",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "ss1_3",
+                  "type": "mcq",
+                  "question": "What is the currency of Ghana?",
+                  "options": ["Naira", "Cedi", "Dollar", "Pound"],
+                  "correct": 1,
+                  "explanation": "Ghana's currency is the Ghana Cedi (GHS).",
+                  "topic": "Our Economic Environment",
+                  "difficulty": "easy"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Ghana: Our Homeland",
+                  "content": "Ghana is located in West Africa with a population of about 31 million people. It gained independence from Britain in 1957 and was the first African country to do so.",
+                  "topic": "Our Physical Environment",
+                  "timeAllocation": 6
+                }
+              ]
+            },
+            "economics": {
+              "name": "Economics",
+              "icon": "💰",
+              "topics": [
+                "Basic Economic Concepts",
+                "Production",
+                "Consumption"
+              ],
+              "questions": [
+                {
+                  "id": "econ1_1",
+                  "type": "mcq",
+                  "question": "What is scarcity?",
+                  "options": ["Unlimited resources", "Limited resources with unlimited wants", "No wants", "No resources"],
+                  "correct": 1,
+                  "explanation": "Scarcity occurs when resources are limited but wants are unlimited.",
+                  "topic": "Basic Economic Concepts",
+                  "difficulty": "medium"
+                },
+                {
+                  "id": "econ1_2",
+                  "type": "mcq",
+                  "question": "What is the law of demand?",
+                  "options": ["Price up, demand up", "Price up, demand down", "Price down, demand down", "Price same, demand same"],
+                  "correct": 1,
+                  "explanation": "When price increases, demand decreases.",
+                  "topic": "Consumption",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Introduction to Economics",
+                  "content": "Economics is the study of how people make choices to satisfy their needs and wants with limited resources. It involves production, distribution, and consumption of goods and services.",
+                  "topic": "Basic Economic Concepts",
+                  "timeAllocation": 8
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "subjects": {
+            "english": {
+              "name": "English Language",
+              "icon": "📝",
+              "topics": [
+                "Active and Passive Voice",
+                "Direct and Indirect Speech",
+                "Essay Writing"
+              ],
+              "questions": [
+                {
+                  "id": "en2_1",
+                  "type": "mcq",
+                  "question": "Change to passive: 'The teacher teaches English.'",
+                  "options": ["English is taught by the teacher", "English was taught by the teacher", "English teaches the teacher", "The teacher is taught English"],
+                  "correct": 0,
+                  "explanation": "Passive voice: Object becomes subject.",
+                  "topic": "Active and Passive Voice",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Active and Passive Voice",
+                  "content": "Active voice: Subject performs the action. Passive voice: Subject receives the action. Use passive when the doer is unknown or less important.",
+                  "topic": "Active and Passive Voice",
+                  "timeAllocation": 6
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "subjects": {
+            "english": {
+              "name": "English Language",
+              "icon": "📝",
+              "topics": [
+                "Literature Analysis",
+                "Advanced Grammar",
+                "Creative Writing"
+              ],
+              "questions": [
+                {
+                  "id": "en3_1",
+                  "type": "mcq",
+                  "question": "What is a metaphor?",
+                  "options": ["Direct comparison", "Indirect comparison", "Similar sounds", "Opposite meanings"],
+                  "correct": 1,
+                  "explanation": "Metaphor is an indirect comparison without using 'like' or 'as'.",
+                  "topic": "Literature Analysis",
+                  "difficulty": "hard"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Literary Devices",
+                  "content": "Literary devices are techniques used by writers to create meaning and effect. Common devices include simile, metaphor, personification, alliteration, and irony.",
+                  "topic": "Literature Analysis",
+                  "timeAllocation": 10
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "general_science": {
+      "name": "General Science",
+      "icon": "🔬",
+      "levels": {
+        "1": {
+          "subjects": {
+            "core_mathematics": {
+              "name": "Core Mathematics",
+              "icon": "🔢",
+              "topics": [
+                "Number Systems",
+                "Basic Algebra",
+                "Geometry Basics"
+              ],
+              "questions": [
+                {
+                  "id": "cm1_1",
+                  "type": "mcq",
+                  "question": "Simplify: 3(x + 4) - 2(x - 3)",
+                  "options": ["x + 18", "x + 6", "5x + 6", "x + 12"],
+                  "correct": 0,
+                  "explanation": "3x + 12 - 2x + 6 = x + 18",
+                  "topic": "Basic Algebra",
+                  "difficulty": "medium"
+                },
+                {
+                  "id": "cm1_2",
+                  "type": "mcq",
+                  "question": "What is the area of a triangle with base 8cm and height 5cm?",
+                  "options": ["40 cm²", "20 cm²", "13 cm²", "26 cm²"],
+                  "correct": 1,
+                  "explanation": "Area = ½ × base × height = ½ × 8 × 5 = 20 cm²",
+                  "topic": "Geometry Basics",
+                  "difficulty": "easy"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Introduction to Algebra",
+                  "content": "Algebra uses letters to represent unknown numbers. Basic operations include addition, subtraction, multiplication, and division of algebraic expressions.",
+                  "topic": "Basic Algebra",
+                  "timeAllocation": 7
+                }
+              ]
+            },
+            "physics": {
+              "name": "Physics",
+              "icon": "🔬",
+              "topics": [
+                "Measurement",
+                "Motion",
+                "Force"
+              ],
+              "questions": [
+                {
+                  "id": "phys1_1",
+                  "type": "mcq",
+                  "question": "What is the SI unit of length?",
+                  "options": ["Meter", "Kilogram", "Second", "Ampere"],
+                  "correct": 0,
+                  "explanation": "Meter is the SI unit of length.",
+                  "topic": "Measurement",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "phys1_2",
+                  "type": "mcq",
+                  "question": "What is Newton's first law also known as?",
+                  "options": ["Law of acceleration", "Law of inertia", "Law of action-reaction", "Law of gravity"],
+                  "correct": 1,
+                  "explanation": "First law states objects resist change in motion.",
+                  "topic": "Force",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Physical Quantities and Measurement",
+                  "content": "Physical quantities are measurable properties of matter or energy. They are classified as base quantities (length, mass, time, etc.) and derived quantities.",
+                  "topic": "Measurement",
+                  "timeAllocation": 8
+                }
+              ]
+            },
+            "chemistry": {
+              "name": "Chemistry",
+              "icon": "⚗️",
+              "topics": [
+                "Matter and Its Properties",
+                "Atomic Structure",
+                "Chemical Bonding"
+              ],
+              "questions": [
+                {
+                  "id": "chem1_1",
+                  "type": "mcq",
+                  "question": "What is the chemical symbol for gold?",
+                  "options": ["Go", "Gd", "Au", "Ag"],
+                  "correct": 2,
+                  "explanation": "Au comes from the Latin 'aurum'.",
+                  "topic": "Atomic Structure",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "chem1_2",
+                  "type": "mcq",
+                  "question": "What type of bond forms between Na and Cl?",
+                  "options": ["Covalent", "Ionic", "Metallic", "Hydrogen"],
+                  "correct": 1,
+                  "explanation": "NaCl forms ionic bonds.",
+                  "topic": "Chemical Bonding",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "States of Matter",
+                  "content": "Matter exists in three main states: solid, liquid, and gas. Solids have definite shape and volume, liquids have definite volume but no definite shape, gases have neither.",
+                  "topic": "Matter and Its Properties",
+                  "timeAllocation": 6
+                }
+              ]
+            },
+            "biology": {
+              "name": "Biology",
+              "icon": "🧬",
+              "topics": [
+                "Introduction to Biology",
+                "Cell Structure",
+                "Classification of Living Things"
+              ],
+              "questions": [
+                {
+                  "id": "bio1_1",
+                  "type": "mcq",
+                  "question": "What is the basic unit of life?",
+                  "options": ["Tissue", "Organ", "Cell", "Atom"],
+                  "correct": 2,
+                  "explanation": "The cell is the basic unit of life.",
+                  "topic": "Cell Structure",
+                  "difficulty": "easy"
+                },
+                {
+                  "id": "bio1_2",
+                  "type": "mcq",
+                  "question": "Which organelle is responsible for photosynthesis?",
+                  "options": ["Mitochondria", "Chloroplast", "Ribosome", "Nucleus"],
+                  "correct": 1,
+                  "explanation": "Chloroplasts carry out photosynthesis.",
+                  "topic": "Cell Structure",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "The Cell: Basic Unit of Life",
+                  "content": "Cells are the smallest units of life. They carry out all the functions necessary for an organism to survive. Plant and animal cells have different structures.",
+                  "topic": "Cell Structure",
+                  "timeAllocation": 9
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "subjects": {
+            "core_mathematics": {
+              "name": "Core Mathematics",
+              "icon": "🔢",
+              "topics": [
+                "Quadratic Equations",
+                "Trigonometry",
+                "Statistics"
+              ],
+              "questions": [
+                {
+                  "id": "cm2_1",
+                  "type": "mcq",
+                  "question": "Solve for x: 2x + 7 = 15",
+                  "options": ["4", "8", "11", "15"],
+                  "correct": 0,
+                  "explanation": "2x = 15 - 7 = 8, so x = 4",
+                  "topic": "Quadratic Equations",
+                  "difficulty": "easy"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Solving Linear Equations",
+                  "content": "Linear equations have variables with exponent 1. To solve, isolate the variable by performing inverse operations on both sides of the equation.",
+                  "topic": "Quadratic Equations",
+                  "timeAllocation": 8
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "subjects": {
+            "core_mathematics": {
+              "name": "Core Mathematics",
+              "icon": "🔢",
+              "topics": [
+                "Calculus",
+                "Vectors",
+                "Probability"
+              ],
+              "questions": [
+                {
+                  "id": "cm3_1",
+                  "type": "mcq",
+                  "question": "What is the derivative of x²?",
+                  "options": ["x", "2x", "x²", "2"],
+                  "correct": 1,
+                  "explanation": "d/dx(x²) = 2x",
+                  "topic": "Calculus",
+                  "difficulty": "hard"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Introduction to Calculus",
+                  "content": "Calculus is the study of rates of change and accumulation. Differential calculus deals with derivatives, integral calculus with integrals.",
+                  "topic": "Calculus",
+                  "timeAllocation": 12
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "business": {
+      "name": "Business",
+      "icon": "💼",
+      "levels": {
+        "1": {
+          "subjects": {
+            "business_studies": {
+              "name": "Business Studies",
+              "icon": "🏢",
+              "topics": [
+                "Introduction to Business",
+                "Business Environment",
+                "Entrepreneurship"
+              ],
+              "questions": [
+                {
+                  "id": "bs1_1",
+                  "type": "mcq",
+                  "question": "What is the main goal of a business?",
+                  "options": ["Make profit", "Help society", "Create jobs", "All of the above"],
+                  "correct": 3,
+                  "explanation": "Businesses aim to make profit, help society, and create jobs.",
+                  "topic": "Introduction to Business",
+                  "difficulty": "easy"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "What is Business?",
+                  "content": "Business is any activity that provides goods or services to customers with the aim of making profit. Types include sole proprietorship, partnership, and corporation.",
+                  "topic": "Introduction to Business",
+                  "timeAllocation": 7
+                }
+              ]
+            },
+            "economics": {
+              "name": "Economics",
+              "icon": "💰",
+              "topics": [
+                "Demand and Supply",
+                "Market Structures",
+                "National Income"
+              ],
+              "questions": [
+                {
+                  "id": "econ1_3",
+                  "type": "mcq",
+                  "question": "What is GDP?",
+                  "options": ["Gross Domestic Product", "Gross Domestic Profit", "General Domestic Price", "Global Domestic Production"],
+                  "correct": 0,
+                  "explanation": "GDP stands for Gross Domestic Product.",
+                  "topic": "National Income",
+                  "difficulty": "medium"
+                }
+              ],
+              "readingMaterials": [
+                {
+                  "title": "Demand and Supply",
+                  "content": "Demand is the quantity of goods consumers are willing to buy at different prices. Supply is the quantity producers are willing to sell at different prices.",
+                  "topic": "Demand and Supply",
+                  "timeAllocation": 8
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "dailyPlans": {
+    "monday": ["general_arts_english", "general_science_core_mathematics", "business_business_studies"],
+    "tuesday": ["general_arts_social_studies", "general_science_physics", "business_economics"],
+    "wednesday": ["general_arts_economics", "general_science_chemistry", "general_arts_english"],
+    "thursday": ["general_science_biology", "general_arts_social_studies", "general_science_core_mathematics"],
+    "friday": ["general_science_physics", "business_business_studies", "general_arts_economics"],
+    "saturday": ["general_science_chemistry", "general_science_biology", "business_economics"],
+    "sunday": ["general_arts_english", "general_science_core_mathematics", "general_arts_social_studies"]
+  }
+}

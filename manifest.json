@@ -1,0 +1,21 @@
+{
+  "name": "Study Coach - Your WAEC Preparation Assistant",
+  "short_name": "Study Coach",
+  "description": "A mobile-first PWA designed for Ghana SHS 2 STEM students preparing for WAEC exams",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#58CC02",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2358CC02' rx='20' width='100' height='100'/><text x='50' y='65' font-size='50' text-anchor='middle' fill='white'>📚</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en-GH",
+  "dir": "ltr"
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study Coach - Dashboard">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <title>Study Coach - Dashboard</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">Study Coach</span>
+      </a>
+      
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="study.html" class="nav-link">Study</a>
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Dashboard Header -->
+    <header class="dashboard-header">
+      <h1 class="dashboard-title">Your Progress</h1>
+      <p class="dashboard-subtitle">Track your WAEC preparation journey</p>
+    </header>
+
+    <!-- Stats Grid -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">🔥</div>
+        <div class="stat-value" id="streakValue">0</div>
+        <div class="stat-label">Day Streak</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-value" id="xpValue">0</div>
+        <div class="stat-label">Total XP</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">📖</div>
+        <div class="stat-value" id="topicsCompleted">0</div>
+        <div class="stat-label">Topics Completed</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">🎯</div>
+        <div class="stat-value" id="levelValue">0</div>
+        <div class="stat-label">Current Level</div>
+      </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="progress-section">
+      <h2 class="progress-title">Subject Progress</h2>
+      
+      <div class="progress-list" id="progressList">
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-name">English</span>
+            <span class="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+        
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-name">Mathematics</span>
+            <span class="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+        
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-name">Physics</span>
+            <span class="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+        
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-name">Chemistry</span>
+            <span class="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+        
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-name">Biology</span>
+            <span class="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">📚</span>
+        <span>Study Coach</span>
+        <p>Your WAEC preparation companion.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Study Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

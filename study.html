@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study Coach - AI-powered learning platform">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Study Coach • AI Learning</title>
+  <link rel="stylesheet" href="study.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">📚</span>
+        <span class="brand-title"><span>Study Coach</span><span>AI Learning Companion</span></span>
+      </a>
+      <div class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="study.html" class="active">Study</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="hero-grid">
+      <div class="hero-card">
+        <div>
+          <h1 class="hero-title">AI-powered learning that feels like a challenge app.</h1>
+          <p class="hero-subtitle">Choose a course, pick a topic, then enter a focused 10-minute session with notes, flashcards, quizzes, and an assistant that supports your study flow.</p>
+        </div>
+        <div class="badge-bar">
+          <span class="badge"><span>⚡</span>10-minute sessions</span>
+          <span class="badge"><span>🧠</span>AI summaries</span>
+          <span class="badge"><span>🏆</span>XP tracking</span>
+          <span class="badge"><span>🌐</span>Live topic boosts</span>
+        </div>
+        <div class="course-section">
+          <div class="section-title">
+            <h2>Choose your course</h2>
+            <p>Start with one subject and unlock curated session content.</p>
+          </div>
+          <div class="course-grid" id="courseGrid"></div>
+        </div>
+      </div>
+
+      <aside class="panel-card">
+        <div class="section-title">
+          <h2>Progress dashboard</h2>
+          <p>Keep your streak alive and grow your XP.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>XP earned</div>
+            <strong id="metricXP">0</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Daily streak</div>
+            <strong id="metricStreak">0 days</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Accuracy</div>
+            <strong id="metricAccuracy">0%</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Focus time</div>
+            <strong id="metricFocus">0 min</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Sessions</div>
+            <strong id="metricSessions">0</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Topics mastered</div>
+            <strong id="metricMastered">0</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Weak topics</div>
+            <strong id="metricWeak">0</strong>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label"><span class="dot"></span>Performance</div>
+            <div class="progress-spark"><div id="progressBarFill" style="width: 12%;"></div></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="session-shell">
+      <div class="session-card">
+        <div class="section-title">
+          <h2>Build your session</h2>
+          <p>Pick the exact lesson flow before you go live.</p>
+        </div>
+        <div class="selector-row">
+          <div class="select-field">
+            <label for="topicSelect">Topic</label>
+            <select id="topicSelect"></select>
+          </div>
+          <div class="select-field">
+            <label for="difficultySelect">Difficulty</label>
+            <select id="difficultySelect"></select>
+          </div>
+        </div>
+        <div class="section-title">
+          <h2>Session preview</h2>
+          <p>Live content is created from local lessons and enhanced by on-demand topic summaries.</p>
+        </div>
+        <div class="course-card" style="padding:1.4rem;">
+          <div class="session-meta"><strong id="previewCourseName">Pick a course</strong><span id="previewTopicName">Choose a topic</span></div>
+          <p id="previewSummary">The session preview will update when you choose a course and topic.</p>
+          <div class="button-group" style="margin-top:1rem;">
+            <span class="session-badge">Difficulty: <strong id="previewDifficulty">Beginner</strong></span>
+          </div>
+          <div class="selector-row" style="margin-top:1rem; grid-template-columns: repeat(2, minmax(0,1fr));">
+            <div class="metric-card"><strong id="previewFlashcardCount">0</strong><span>Flashcards</span></div>
+            <div class="metric-card"><strong id="previewQuestionCount">0</strong><span>Quiz questions</span></div>
+          </div>
+          <div style="display:flex; gap:1rem; margin-top:1.2rem; flex-wrap:wrap;">
+            <button class="btn btn-primary" id="startSessionBtn">Start Session</button>
+            <button class="btn btn-secondary" id="resetSessionBtn" type="button">Reset Timer</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="assistant-card" id="assistantPanel">
+        <div class="assistant-header">
+          <div class="assistant-title">
+            <strong>AI Study Assistant</strong>
+            <span id="assistantStatus">Ready to help with concepts and hints.</span>
+          </div>
+        </div>
+        <div class="assistant-body">
+          <textarea id="assistantInput" class="input-field" placeholder="Ask for a hint, summary, or explanation..."></textarea>
+          <button class="btn btn-primary" id="assistantSend">Ask Assistant</button>
+          <div class="assistant-log" id="assistantLog"></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="session-card">
+      <div class="session-header">
+        <div>
+          <h2 id="sessionCardTitle">Live session ready</h2>
+          <span class="session-badge" id="sessionLabel">Prepare to begin</span>
+        </div>
+      </div>
+      <div class="timer-panel">
+        <div class="timer-top">
+          <div>
+            <div class="timer-title">Focus timer</div>
+            <div class="timer-value" id="sessionTimer">10:00</div>
+          </div>
+          <div class="timer-stats">
+            <div class="session-badge">10 min streak boost</div>
+          </div>
+        </div>
+        <div class="timer-ring">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="timerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8b5cf6" />
+                <stop offset="100%" stop-color="#22d3ee" />
+              </linearGradient>
+            </defs>
+            <circle class="ring-bg" cx="100" cy="100" r="90" />
+            <circle class="ring-progress" id="timerProgress" cx="100" cy="100" r="90" />
+          </svg>
+          <div class="timer-ring-text"><strong>Stay focused</strong><span>Live session progression</span></div>
+        </div>
+      </div>
+      <div class="session-content-area">
+        <div class="session-step" id="sessionBody">
+          <h3>Your first step will appear here when the session begins.</h3>
+          <p>Answer questions one at a time and collect XP for correct responses.</p>
+        </div>
+        <div class="progress-spark" style="margin-top:-0.2rem;"><div id="sessionProgressLabel" style="width: 0%;"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="assistant-orb" id="assistantOrb" aria-label="Open AI Assistant">🤖</button>
+  <div class="toast" id="toast"></div>
+
+  <footer class="panel-card" style="margin: 0 1.5rem 2rem;">
+    <div class="section-title">
+      <h2>Ready for startup-quality study flow</h2>
+      <p>Sessions are hybrid: local lessons plus live sources where available.</p>
+    </div>
+    <p style="color: var(--text-muted);">This experience uses local course content as the primary system, then enhances topics with live Wikipedia summaries when possible. It keeps your learning fast, reliable, and more resilient to network limits.</p>
+  </footer>
+
+  <script src="study.js" defer></script>
+</body>
+</html>
